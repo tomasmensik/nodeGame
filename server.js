@@ -16,7 +16,7 @@ const io = socketio(server);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'ChatCord Bot';
+const botName = 'Quiz Bot';
 
 const PORT = 3000 || process.env.PORT;
 
@@ -26,7 +26,7 @@ io.on('connection', socket => {
         const user = userJoin(socket.id, username, room);
         socket.join(user.room);
 
-        socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+        socket.emit('message', formatMessage(botName, 'Welcome to Quiz Competition!'));
 
         socket.broadcast.to(user.room).emit('message', formatMessage(botName, `${user.username} has joined the chat.`));
 

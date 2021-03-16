@@ -11,14 +11,21 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title>ChatCord App</title>
+
+		<title>Quiz Competition</title>
 	</head>
 	<body>
 		<div class="join-container">
 			<header class="join-header">
-				<h1><i class="fas fa-smile"></i> ChatCord</h1>
+				<h1><i class="fas fa-gamepad"></i>   Quiz Competition</h1>
 			</header>
 			<main class="join-main">
+				<div class="startText">
+					<h2>Welcome!</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, rem saepe? Inventore ad assumenda accusamus rem debitis!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam reprehenderit adipisci repudiandae! Laboriosam asperiores ratione ut, rem quos vitae tempora cum saepe libero doloribus dolorum. Ipsa ratione suscipit natus a dolores officiis?</p>
+					<p class="increaseGamepad"><i class="fas fa-gamepad"></i></p>
+				</div>
 				<form action="chat.html">
 					<div class="form-control">
 						<label for="username">Username</label>
@@ -33,15 +40,15 @@
 					<div class="form-control">
 						<label for="room">Room</label>
 						<select name="room" id="room">
-							<option value="JavaScript">JavaScript</option>
-							<option value="Python">Python</option>
-							<option value="PHP">PHP</option>
-							<option value="C#">C#</option>
-							<option value="Ruby">Ruby</option>
-							<option value="Java">Java</option>
+							<option value="Word Guessing">Word Guessing</option>
+							<option value="Math Equations">Math Equations</option>
+							<option value="Country and Capitals">Country and Capitals</option>
+							<option value="Drawing">Drawing</option>
 						</select>
 					</div>
-					<button type="submit" class="btn">Join Chat</button>
+					<div class="buttonClass">
+						<button type="submit" class="btn">Join</button>
+					</div>
 				</form>
 			</main>
 		</div>
