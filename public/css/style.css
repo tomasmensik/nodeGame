@@ -28,6 +28,10 @@ a {
 	text-decoration: none;
 }
 
+canvas{
+	width: 100%;
+	border-style: solid;
+}
 
 /* Chat Page */
 

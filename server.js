@@ -9,6 +9,7 @@ const {
     userLeave, 
     getRoomUsers
 } = require('./utils/users');
+//const setPosition = require('./public/js/drawing');
 
 const app = express();
 const server = http.createServer(app);
